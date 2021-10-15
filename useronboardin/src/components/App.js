@@ -67,12 +67,12 @@ function App() {
       email: formValues.email.trim(),
       role: formValues.role.trim(),
       civil: formValues.civil.trim(),
-      // 🔥 STEP 7- WHAT ABOUT HOBBIES?
+      
       hobbies: formValues.agree
     }
     console.log("App.js newFriend = ", newFriend)
     postNewFriend(newFriend);
-    // 🔥 STEP 8- POST NEW FRIEND USING HELPER
+    
   }
 
   const postNewFriend = newFriend => {

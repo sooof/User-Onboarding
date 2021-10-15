@@ -50090,7 +50090,6 @@ function FriendForm(props) {
   };
 
   var onChange = function onChange(evt) {
-    /* 🔥 FIX THIS SO IT ALSO WORKS WITH CHECKBOXES */
     var _evt$target = evt.target,
         name = _evt$target.name,
         value = _evt$target.value,
@@ -50287,11 +50286,10 @@ function App() {
       email: formValues.email.trim(),
       role: formValues.role.trim(),
       civil: formValues.civil.trim(),
-      // 🔥 STEP 7- WHAT ABOUT HOBBIES?
       hobbies: formValues.agree
     };
     console.log("App.js newFriend = ", newFriend);
-    postNewFriend(newFriend); // 🔥 STEP 8- POST NEW FRIEND USING HELPER
+    postNewFriend(newFriend);
   };
 
   var postNewFriend = function postNewFriend(newFriend) {
@@ -50367,7 +50365,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64998" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50004" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

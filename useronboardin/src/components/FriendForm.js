@@ -17,7 +17,7 @@ function FriendForm(props){
     }
 
     const onChange = evt => {
-      /* 🔥 FIX THIS SO IT ALSO WORKS WITH CHECKBOXES */
+      
       const { name, value, checked, type } = evt.target
       console.log(evt.target) 
       console.log(evt.target.value)
