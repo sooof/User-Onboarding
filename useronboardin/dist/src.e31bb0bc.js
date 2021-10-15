@@ -50130,6 +50130,7 @@ function FriendForm(props) {
     name: "agree",
     type: "checkbox"
   })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, /*#__PURE__*/_react.default.createElement("button", {
+    id: "submitBtn",
     disabled: disabled
   }, "submit"))));
 }

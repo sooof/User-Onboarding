@@ -13,8 +13,19 @@ describe('My First Test', () => {
   describe('My First Test', () => {
     beforeEach(() => {
       cy.visit('http://localhost:1234')
-  
-    //   cy.contains('type').click()
+    })
+
+    const textInput = () => cy.get('input[name=username]');
+    const emailInput = () => cy.get('input[name=email]');
+    const passwordInput = () => cy.get('input[name=password]');
+    const checkboxInput = () => cy.get('input[name=agree]');
+    const submitBtn = () => cy.get('button[id=submitBtn]');
+
+    it('the proper elements are showing', () => {
+        textInput().should('exist');
+        emailInput().should('exist');
+        passwordInput().should('exist');
+        submitBtn().should('exist');
     })
 
 

@@ -85,7 +85,7 @@ function FriendForm(props){
   
             {/**  A Submit button to send our form data to the server.  */}
             <label >
-              <button disabled={disabled}>submit</button>
+              <button id='submitBtn' disabled={disabled}>submit</button>
             </label>
   
           </form>
