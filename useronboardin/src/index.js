@@ -1,20 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+// This is for the fake API. Do not delete!
 import { worker } from './api-mocks/browser'
 worker.start()
 
-ReactDOM.render(
-  // <React.StrictMode>
-    <App />
-  // </React.StrictMode>
-  ,document.getElementById('root')
-);
+// 👉 Importing React libs from node_modules folder
+import React from 'react'
+import { render } from 'react-dom'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// 👉 Importing the top-level component
+import App from './components/App'
+
+render(
+  <App />
+  , document.querySelector('#root')
+)
